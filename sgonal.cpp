@@ -18,19 +18,13 @@ struct polyProfile
 	long value;
 };
 
-
 int main()
 {
 	int option, s, limit, num, counter;
 	long maxVal, maxSgonal;
 
 	cout << "   ____                            __  _______           __          \n  / __/ ____  ___ ____  ___  ___ _/ / / ___/ /  ___ ____/ /_____ ____\n _\\ \\  /___/ / _ `/ _ \\/ _ \\/ _ `/ / / /__/ _ \\/ -_) __/  '_/ -_) __/\n/___/        \\_, /\\___/_//_/\\_,_/_/  \\___/_//_/\\__/\\__/_/\\_\\\\__/_/   \n            /___/                                                    \n\n";
-	/*
-	cout << "\t*********************************\n"
-		 << "\t*         SGONAL CHECKER        *\n"
-		 << "\t*             v1.3              *\n"
-		 << "\t*********************************\n\n";
-	*/
+
 	cout << "<1> Check s-gonality\n<2> Generate s-gonals\n<3> Determine s-values which validate n being s-gonal\n<4> Check hyperpolygonality \n\n";
 	cout << "Option: ";
 	cin >> option;
@@ -155,26 +149,7 @@ int main()
 					}
 				}
 			}
-
-/*
-		case 8: //for testing purposes only at the moment
-			{
-				cout << "\nInput number: ";
-				cin >> num;
-				cout << "Input s-value limit: ";
-				cin >> limit;
-
-				for(int j = 1; j <= limit; j++)
-				{
-					if(isSgonal(j, num))
-					{
-						counter++;
-					}
-				}
-				cout << counter << endl;
-				break;
-			}
-*/
+			*/
 
 		default:
 		{
@@ -244,17 +219,7 @@ void hyperpolygonal(void)
 
 	int maxTrueQuant = 0;
 	int maxNVal = 0;
-	//tests be hither
 
-	/*
-	   for(int k = 0; k <= nlim; k++)
-	   {
-	   cout << "arr[" << k << "].trueQuant = " << arr[k].trueQuant << endl;
-	   cout << "arr[" << k << "].value = " << arr[k].value << endl;
-	   cout << endl;
-	   }
-	   */
-	//cout << "Determining number with most hits...\n\n";
 	for(int k = 1; k <= nlim; k++)
 	{
 		if(arr[k].trueQuant > maxTrueQuant && arr[k].value != 1)
