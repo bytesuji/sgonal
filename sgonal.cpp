@@ -119,37 +119,11 @@ int main()
 			break;
 		}
 
-		case 4: 
+		case 4:
 		{
 			hyperpolygonal();
 			break;
 		}
-
-			/* being worked on
-		case 5:
-			{
-				cout << "Input values for polygonality checking. Input a # character when finished." << endl;
-				int index, tmp = 0;
-				vector<int> polygValues;
-
-				do
-				{
-					cin >> tmp;
-					polygValues.at(index) = tmp;
-					++index;
-				} while((char) tmp != '#') //this needs to be changed, because it prevents the user from testing the value of 35 (the ASCII value for #)
-				cout << "To what limit do you want to test? ";
-				cin >> limit;
-
-				for(int k = 0; k <= polygValues.size(); k++)
-				{
-					for(int n = 0; n <= limit; n++)
-					{
-						if(isSgonal(polygValues.at(k),))
-					}
-				}
-			}
-			*/
 
 		default:
 		{
