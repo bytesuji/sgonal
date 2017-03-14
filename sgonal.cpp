@@ -119,7 +119,7 @@ int main()
 			break;
 		}
 
-		case 4: //doesn't really work right now, not sure why
+		case 4: 
 		{
 			hyperpolygonal();
 			break;
